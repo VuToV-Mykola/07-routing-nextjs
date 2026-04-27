@@ -3,7 +3,7 @@ import NotesClient from "./Notes.client";
 import { fetchNotes } from "@/lib/api";
 
 type Props = {
-  params: Promise<{ tag?: string[] }>;
+  params: Promise<{ slug?: string[] }>;
 };
 
 function normalizeTag(tagParam?: string[]) {
@@ -13,8 +13,8 @@ function normalizeTag(tagParam?: string[]) {
 }
 
 export default async function NotesFilterPage({ params }: Props) {
-  const { tag } = await params;
-  const normalizedTag = normalizeTag(tag);
+  const { slug } = await params;
+  const normalizedTag = normalizeTag(slug);
   const queryClient = new QueryClient();
 
   await queryClient.prefetchQuery({
