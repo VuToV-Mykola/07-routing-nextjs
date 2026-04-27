@@ -9,7 +9,7 @@ import Pagination from "@/components/Pagination/Pagination";
 import NoteList from "@/components/NoteList/NoteList";
 import Modal from "@/components/Modal/Modal";
 import NoteForm from "@/components/NoteForm/NoteForm";
-import css from "@/app/notes/Notes.module.css";
+import css from "./Notes.module.css";
 
 type Props = {
   tag: string | null;
