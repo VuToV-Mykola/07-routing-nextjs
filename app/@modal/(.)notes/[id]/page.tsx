@@ -1,5 +1,5 @@
-import NotePreviewModal from "@/components/NotePreview/NotePreviewModal";
+import NotePreviewClient from "./NotePreview.client";
 
 export default function NotePreviewInterceptPage() {
-  return <NotePreviewModal />;
+  return <NotePreviewClient />;
 }
